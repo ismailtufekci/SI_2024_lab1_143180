@@ -1,1 +1,3 @@
-# SI_2024_lab1_143180
+ime:Ismail
+prezime: Tufekchi
+broj na index: 143180
