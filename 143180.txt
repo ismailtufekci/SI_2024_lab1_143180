@@ -1,0 +1,109 @@
+============== 4 ======================================
+mkdir SI_2024_lab1_143180 - kreirame direktorium za gitot
+
+cd SI_2024_lab1_143180- pristapuvame do nego 
+
+git init - inicijalizirame git
+
+=============== 5 =====================================
+ssh-keygen -t ed25519 -C "ssh validacija za lab1"
+cat ~/.ssh/id_ed25519.pub
+git clone git@github.com:ismailtufekci/SI_2024_lab1_143180.git
+go vnesov public key sto mi go isprinta komandata cat  i si go vnesov pasvordot za avtentifikacija pri generiranje na ssh kod od tipot ed25519
+i se klonira kaj mene lokalno istiot repo koj sto e online 
+
+======================== 6 ===========================
+nano README.md kreirav datoteka vo koja go napisav imeto prezimeto i indexot
+git add README.md 
+git commit -m "Initial Commit"
+
+======================== 7 ===========================
+ git add SILab1Main.java
+ git add SILab1_1.java 
+ git add SILab1_2.java 
+ git commit -m "Add starter code"
+
+======================= 8 ============================
+git push - so validacija od paswordot koj sum go postavil se sinhronizira localniot repo so toj online
+
+====================== 9 ==============================
+git branch bug1
+git branch bug2
+====================== 10 =============================
+git checkout bug1 
+====================== 11 ==============================
+vim SILab1_1.java - pa vo nejze so klik na i vleguvame vo edit, mesto == stavame != potoa na esc dva pati pisuvame komanda :x i ni se zacuvuva promenata
+git add SILab1_1.java 
+git commit -m "Fix wrong condition in filter OddLengthStrings" 
+
+====================== 12 ===========================================================
+git checkout bug2
+
+====================== 13 ===========================================================
+vim SILab1_2.java  isto kako kaj cekor 11 samo ovoj pat menuvame vo >= 
+git add SILab1_2 
+git commit -m "Fix wrong condition in makeBigStringFrom"
+ 
+====================== 14 =======================================================
+git checkout bug1 
+
+===================== 15 ========================================================
+vim SILab1Main.java - so i insertirame kodot za povik na metodot i so esc esc :x zacuvuvame i izleguvame od fajlot
+git add SILab1Main.java
+git commit -m "Call method filterOddLengthStrings in main class"
+
+======================= 16 =====================================================
+git checkout bug2
+
+========================== 17 ================================================
+
+vim SILab1Main.java isto kako vo 15 ka samo so soodvetniot kod 
+git add SILab1Main.java
+git commit -m "Call method makeBigStringsFrom in main class"
+
+======================== 18 ==================================================
+git checkout master 
+git push --all origin - ke gi sinhronizira site granki na github 
+
+======================== 19 =================================================
+git checkout master 
+
+========================= 20 =================================================
+git merge bug1 - ja spojuvame grankata bug1 kon master - fast forward- 
+
+=========================== 21 =============================================
+git push --all origin - gi sinhronizira site granki na oddaleceniot repozitorium 
+
+========================== 22 ===============================================
+git checkout bug2 - se prefrluvame na grankata 2
+
+========================== 23 ==================================================
+git rebase master - ni javuva konflikt kade sto vo main klasata na istata linija imame drug kod go resavame so vim SILab1Main.java so i pravime korekcija na kodot go simnuvame edna linija podole,
+so esc esc :x se zacuvuva fajlot
+ 
+git rebase --continue - prodolzuvame so rebase so istiot komentar na predhodniot kommit koj sto bese na bug2 za main klasata.
+
+========================= 24 ==================================================
+git checkout master - se prefrlame na grankata master 
+
+========================= 25 ==================================================
+git merge bug2 - go spojuvame bug 2 so master 
+
+========================= 26 ==================================================
+git push --all origin - ke ni gi sinhronizira site no pravi problem so bug2 zatoa sto ne e ff.
+
+============================= 27 ===========================================
+git push --force - ni go sinhronzira i bug 2 
+
+========================== 28 =================================================
+git log - ni gi lista site log podatoci koi gi copirame 
+nano logs.txt - zapisuvame site logs podatoci koi gi kopiravme 
+nano 143180.txt - otvarame datoteka i ja pisuvame celata dokumentacija za proektov 
+git add logs.txt - gi stavame vo staged faza dvata txt fajlovi mozese i so git add *.txt  
+git add 143180.txt 
+git commit -m "Final commit"
+
+==================== 29 =====================================
+git push --all origin - gi sinhronizirame site ggranki so oddaleceniot repozitorium 
+  
+========================== 29 =============================================

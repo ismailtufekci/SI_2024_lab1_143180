@@ -1,0 +1,42 @@
+ismailtufekci14@penguin:~/SI_2024_lab1_143180/SI_2024_lab1_143180$ git log
+commit 7bb445f48441b7a163af436b0722488b2c1ee501 (HEAD -> master, origin/master, origin/HEAD, bug2)
+Author: Ismail <ismailtufekci14@gmail.com>
+Date:   Sun Apr 14 19:27:22 2024 +0200
+
+    Call method makeBigStringFrom in main class
+
+commit 7c3a660c5037950bbd394e6957a9b837a7cc15db
+Author: Ismail <ismailtufekci14@gmail.com>
+Date:   Sun Apr 14 17:52:28 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 123fe01ae6916bbe98598dbe18fe10eda1e5aff4 (origin/bug1, bug1)
+Author: Ismail <ismailtufekci14@gmail.com>
+Date:   Sun Apr 14 18:07:36 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit 75a263723fd24259ecc463abd024176bd7141a7c
+Author: Ismail <ismailtufekci14@gmail.com>
+Date:   Sun Apr 14 17:42:34 2024 +0200
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit da262996b22a37a1eaad39eabfd07a89c0d76deb
+Author: Ismail <ismailtufekci14@gmail.com>
+Date:   Sun Apr 14 16:36:43 2024 +0200
+
+    Add starter code
+
+commit 03d7d883512ff9fa4ca1cbe96ba874e5bae7312e
+Author: Ismail <ismailtufekci14@gmail.com>
+Date:   Sun Apr 14 16:17:17 2024 +0200
+
+    Initial Commit
+
+commit b977bee07cd39f77f836f3a19edfeefa5ca0fdd0
+Author: ismailtufekci <39672914+ismailtufekci@users.noreply.github.com>
+Date:   Sun Apr 14 14:39:26 2024 +0200
+
+:
